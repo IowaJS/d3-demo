@@ -1,0 +1,29 @@
+/* from https://gist.github.com/mbostock/3884955#file-index-html */
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+/* Stuff I'm adding */
+body { font-size: 14px; font-family: "Helvetica Neue" }
+header h1 { font-size: 64px; font-weight: normal; margin-right: 12px; display: inline; }
+header h2 { font-size: 120%; font-weight: normal; display: inline; }
+header { border-bottom: 1px solid #cccccc; }
+section h1 { font-weight: normal; display: inline-block; margin-right: 12px; }
+div > * { font-size: 10px; }
