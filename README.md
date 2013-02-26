@@ -19,3 +19,7 @@ http://d3js.org/
 * [Cubism](http://square.github.com/cubism/): For metrics dashboards
 * [Graphene](http://jondot.github.com/graphene/): Graphite dashboard toolkit
 * [C2](http://keminglabs.com/c2/): Clojure(script) library inspired by D3
+
+## Running the Demos
+
+Run `./bin/run` from the project root directory and point your browser at http://localhost:4000.
