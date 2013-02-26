@@ -27,3 +27,12 @@ var x = d3.scale.ordinal()
 
 var y = d3.scale.linear()
     .range([height, 0]);
+
+d3.tsv("data/bars.tsv", function(letters) {
+
+  letters.forEach(function(d) { d.frequency = +d.frequency; });
+
+  x.domain(letters.map(function(d) { return d.letter; }));
+  y.domain([0, d3.max(letters, function(d) { return d.frequency; })]);
+
+});
