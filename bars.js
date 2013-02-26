@@ -35,4 +35,12 @@ d3.tsv("data/bars.tsv", function(letters) {
   x.domain(letters.map(function(d) { return d.letter; }));
   y.domain([0, d3.max(letters, function(d) { return d.frequency; })]);
 
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.svg.axis().scale(x).orient("bottom"));
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(d3.svg.axis().scale(y).orient("left"));
 });
