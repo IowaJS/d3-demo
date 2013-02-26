@@ -43,4 +43,13 @@ d3.tsv("data/bars.tsv", function(letters) {
   svg.append("g")
       .attr("class", "y axis")
       .call(d3.svg.axis().scale(y).orient("left"));
+
+  svg.selectAll(".bar")
+      .data(letters)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.letter); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.frequency); })
+      .attr("height", function(d) { return height - y(d.frequency); });
 });
