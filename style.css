@@ -18,6 +18,24 @@ body {
   display: none;
 }
 
+/* from http://bl.ocks.org/mbostock/2706022#index.html */
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+.node circle {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+text {
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+
 /* Stuff I'm adding */
 body { font-size: 14px; font-family: "Helvetica Neue" }
 header h1 { font-size: 64px; font-weight: normal; margin-right: 12px; display: inline; }
@@ -25,3 +43,4 @@ header h2 { font-size: 120%; font-weight: normal; display: inline; }
 header { border-bottom: 1px solid #cccccc; }
 section h1 { font-weight: normal; display: inline-block; margin-right: 12px; }
 div > * { font-size: 10px; }
+#graph { min-height: 500px; }
