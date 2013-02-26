@@ -43,4 +43,3 @@ header h2 { font-size: 120%; font-weight: normal; display: inline; }
 header { border-bottom: 1px solid #cccccc; }
 section h1 { font-weight: normal; display: inline-block; margin-right: 12px; }
 div > * { font-size: 10px; }
-#graph { min-height: 500px; }
