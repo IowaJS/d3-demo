@@ -22,4 +22,4 @@ http://d3js.org/
 
 ## Running the Demos
 
-Run `./bin/run` from the project root directory and point your browser at http://localhost:4000.
+Run `gem install bundler && bundle` to install gem dependencies. Run `./bin/foreman start` from the project root directory and point your browser at http://localhost:4000.

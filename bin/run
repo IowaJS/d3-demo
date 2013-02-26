@@ -1,2 +1,0 @@
-#!/bin/sh
-gem install bundler && bundle --binstubs && ./bin/foreman start
