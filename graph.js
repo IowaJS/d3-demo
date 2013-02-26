@@ -90,3 +90,10 @@ var node = svg.selectAll(".node")
     .on("mouseout", mouseout)
     .call(force.drag);
 
+node.append("circle")
+    .attr("r", 8);
+
+node.append("text")
+    .attr("x", 12)
+    .attr("dy", ".35em")
+    .text(function(d) { return d.name; });
