@@ -1,4 +1,4 @@
-/* from https://gist.github.com/mbostock/3884955#file-index-html */
+/* from http://bl.ocks.org/mbostock/3310560#index.html */
 body {
   font: 10px sans-serif;
 }
@@ -10,14 +10,12 @@ body {
   shape-rendering: crispEdges;
 }
 
-.x.axis path {
-  display: none;
+.bar {
+  fill: steelblue;
 }
 
-.line {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 1.5px;
+.x.axis path {
+  display: none;
 }
 
 /* Stuff I'm adding */
